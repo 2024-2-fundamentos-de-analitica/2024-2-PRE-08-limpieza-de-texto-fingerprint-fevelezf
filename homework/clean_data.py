@@ -94,3 +94,9 @@ def main(input_file, output_file):
     df = generate_cleaned_column(df)
     df.to_csv("files/test.csv", index=False)
     save_data(df, output_file)
+
+if __name__ == "__main__":
+    main(
+        input_file="files/input/input.txt",
+        output_file="files/output.txt",
+    )
